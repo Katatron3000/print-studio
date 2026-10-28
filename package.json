@@ -1,0 +1,22 @@
+{
+  "name": "sweet-print-studio",
+  "productName": "Sweet Print Studio",
+  "version": "1.0.0",
+  "description": "300 DPI templates for candy wrappers, stickers, labels and tags with PNG, JPG and layered PSD export.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build:win": "electron-builder --win",
+    "build:mac": "electron-builder --mac"
+  },
+  "devDependencies": {
+    "electron": "31.7.7",
+    "electron-builder": "24.13.3"
+  },
+  "build": {
+    "appId": "com.sweetprintstudio.app",
+    "files": ["index.html", "main.js"],
+    "win": { "target": "nsis" },
+    "mac": { "target": "dmg" }
+  }
+}
